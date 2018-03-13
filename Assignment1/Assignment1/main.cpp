@@ -1,23 +1,30 @@
-//This is a test file
-// Lets test the conflicts
 #include <iostream>
-#include <Engine.h>
+#include "Weapon.h"
+#include "Player.h"
+#include "PrimaryWep.h"
+#include "SecondaryWep.h"
 
-struct sendHelp
-{
-	void Print()
-	{
-		std::cout << "Please\n";
-	}
-};
 
 int main() {
 
-	Engine e;
-	e.print();
 
-	//sendHelp s;
-	//s.Print();
+	Player p;
+
+	PrimaryWep w1 ("Fire Effect 1");
+	SecondaryWep w2("Fire Shots 2"), w3 ("Fire Shots 3");
+
+	
+
+	p.Equip(w1);
+	p.ShootMainWep();
+
+	p.Equip(w2);
+	p.ShootSecWep();
+
+
+
+	p.Equip(w3);
+	p.ShootSecWep();
 
 	getchar();
 	return 0; 
