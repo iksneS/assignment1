@@ -11,5 +11,5 @@ PrimaryWep::~PrimaryWep()
 
 PrimaryWep::PrimaryWep(std::string s)
 {
-	Weapon::shootText = s;
+	Weapon::FireText = s;
 }

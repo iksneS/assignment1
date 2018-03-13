@@ -10,5 +10,5 @@ SecondaryWep::~SecondaryWep()
 
 SecondaryWep::SecondaryWep(std::string s)
 {
-	Weapon::shootText = s;
+	Weapon::FireText = s;
 }

@@ -9,7 +9,7 @@ public:
 	Weapon();
 	~Weapon();
 	void Shoot();
-	std::string shootText;
+	std::string FireText;
 
 };
 

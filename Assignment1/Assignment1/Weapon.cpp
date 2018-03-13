@@ -13,5 +13,5 @@ Weapon::~Weapon()
 
 void Weapon::Shoot()
 {
-		std::cout << shootText << "\n";
+		std::cout << FireText << "\n";
 }
